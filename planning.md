@@ -10,7 +10,8 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-
+The domain I choose was cyber security. Cyber Security is a very vast topic and field
+and there are many resources that are constantly changing with the technology.
 ---
 
 ## Documents
@@ -18,18 +19,18 @@
 <!-- List your specific sources: URLs, subreddit names, forum threads, or file descriptions.
      Aim for at least 10 sources that together cover different subtopics or perspectives within your domain. -->
 
-| # | Source | Description | URL or location |
-|---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| # | Source      | Description                                  | URL or location |
+|---|-------------|----------------------------------------------|-----------------|
+| 1 | Black Hat Go                 |Go for programming for hackers and pentesters |AI_Engineering_Project1\documents|
+| 2 | Linux basics for hackers     |networking,scripting and security in kali |AI_Engineering_Project1\documents |
+| 3 | Malware Data Science        |attack detection and Attribution |AI_Engineering_Project1\documents |
+| 4 | penetration testing          |a hands-on introduction to hacking |AI_Engineering_Project1\documents |
+| 5 | practical packet analysis   |using wireshark to solve real-world network problems |AI_Engineering_Project1\documents |
+| 6 | practical binary analysis    |build your own linux tools for binary instrumention, analysis, and dissembly |AI_Engineering_Project1\documents |
+| 7 | Serious Cryptography |a practical introduction to modern encryption |AI_Engineering_Project1\documents |
+| 8 | Web security for Developers | real threats, practical defense|AI_Engineering_Project1\documents |
+| 9 | Real world bug hunting | a field guide to web hacking | AI_Engineering_Project1\documents |
+| 10 | The Car hacker's Handbook | A guide for the Penetration Tester | AI_Engineering_Project1\documents |
 
 ---
 
