@@ -41,9 +41,9 @@ and there are many resources that are constantly changing with the technology.
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size: 450**
+**Chunk size: **450
 
-**Overlap: 150**
+**Overlap: **150
 
 **Reasoning:**
 
@@ -74,11 +74,11 @@ and there are many resources that are constantly changing with the technology.
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | How to get started to learn how to hack?| |
+| 2 | How should I build a home lab? | |
+| 3 |What do I need to learn to get started? | |
+| 4 | What domains can I pursue? | |
+| 5 | What tools do I need to use? | |
 
 ---
 
@@ -88,9 +88,11 @@ and there are many resources that are constantly changing with the technology.
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1.Data Source unreachable     
 
-2.
+2. Loss of semantic context
+
+3. Model drift mismatch
 
 ---
 
@@ -101,6 +103,10 @@ and there are many resources that are constantly changing with the technology.
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
+
+     | Injestion | -> | Chunking | -> | Embedding + Vector store | -> | Retrival | -> | Generation |
+
+     
 
 ---
 

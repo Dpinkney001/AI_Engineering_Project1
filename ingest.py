@@ -32,7 +32,7 @@ def load_documents():
 #########################################################################################################
 
 
-def chunk_pdf():
+def chunk_pdf(text, subject_name):
     """
 def chunk_document(text, game_name):
     """
