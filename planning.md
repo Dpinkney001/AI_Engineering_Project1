@@ -41,9 +41,9 @@ and there are many resources that are constantly changing with the technology.
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size: 450**
 
-**Overlap:**
+**Overlap: 150**
 
 **Reasoning:**
 
@@ -57,7 +57,7 @@ and there are many resources that are constantly changing with the technology.
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model: "all-MiniLM-L6-v2"**
 
 **Top-k:**
 
