@@ -12,7 +12,7 @@ def generate_response(query, retrieved_chunks):
 
     `retrieved_chunks` is the list returned by retrieve(). Each item is a dict:
       - "text"     : the chunk text
-      - "game"     : the game name
+      - "subject"     : the subject name
       - "distance" : similarity score (you can use this to filter weak matches)
 
     Before writing code, talk through these with your group:
@@ -31,7 +31,7 @@ def generate_response(query, retrieved_chunks):
     """
     if not retrieved_chunks:
         return (
-            "I couldn't find anything relevant in the loaded rule books. "
+            "I couldn't find anything relevant in the loaded books. "
             "Try rephrasing your question — or check that your ingestion pipeline is working."
         )
 
