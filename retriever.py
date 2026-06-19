@@ -40,7 +40,7 @@ def embed_and_store(chunks):
     """
     _collection.add(
         documents=[c["text"] for c in chunks],
-        metadatas=[{"game": c["game"]} for c in chunks],
+        metadatas=[{"subject": c["subject"]} for c in chunks],
         ids=[c["chunk_id"] for c in chunks],
     )
     print(f"Stored {_collection.count()} total chunks in the vector database.")
@@ -59,7 +59,7 @@ def retrieve(query, n_results=N_RESULTS):
 
     Return a list of dicts, each with:
       - "text"     : the chunk text
-      - "game"     : the game name (pull this from metadatas)
+      - "subject"     : the subject (pull this from metadatas)
       - "distance" : the similarity score (lower = more similar for cosine)
 
     Note: _collection.query() returns nested lists (one per query). You only
