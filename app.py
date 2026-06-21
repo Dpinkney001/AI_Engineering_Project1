@@ -51,7 +51,6 @@ def chat(message, history):
     retrieved = retrieve(message)
     return generate_response(message, retrieved)
 
-"""
 # ---------------------------------------------------------------------------
 # Gradio UI
 # ---------------------------------------------------------------------------
@@ -115,14 +114,14 @@ with gr.Blocks(
                     </p>
                     <ul style="font-size:0.85rem; color:#5b21b6; list-style:none;
                                 padding:0; margin:0; line-height:1.8;">
-                        <li>🏔️ Catan</li>
-                        <li>🔍 Clue</li>
-                        <li>🎯 Codenames</li>
-                        <li>🏦 Monopoly</li>
-                        <li>🦠 Pandemic</li>
-                        <li>🌍 Risk</li>
-                        <li>🚂 Ticket to Ride</li>
-                        <li>🃏 Uno</li>
+                        <li> Black Hat Go</li>
+                        <li> Linux basics for Hackers </li>
+                        <li> Malware Data Science </li>
+                        <li> Penetration testing </li>
+                        <li>Practical Analysis</li>
+                        <li> Practical Binary</li>
+                        <li> Serious Crytography </li>
+                        <li> </li>
                     </ul>
                     <hr style="border:none; border-top:1px solid #ddd6fe; margin:0.75rem 0;">
                     <p style="font-size:0.75rem; color:#7c3aed; margin:0; line-height:1.5;">
@@ -131,8 +130,6 @@ with gr.Blocks(
                     </p>
                 </div>
             """)
-
-"""
 
 
 if __name__ == "__main__":
