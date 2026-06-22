@@ -9,10 +9,10 @@ def load_pdf():
     return text
 
 
-##########################################################################################################
+#------------------------------------------------------------------------------------------
 """
 def load_documents():
-    """Load all .txt rule documents from the docs folder."""
+    #Load all .txt rule documents from the docs folder.
     documents = []
     for filename in sorted(os.listdir(DOCS_PATH)):
         if filename.endswith(".txt"):
@@ -29,7 +29,7 @@ def load_documents():
     return documents
 
     """
-#########################################################################################################
+#----------------------------------------------------------------------------------------
 
 
 def chunk_pdf(text, subject_name):

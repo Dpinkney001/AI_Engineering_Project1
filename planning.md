@@ -80,6 +80,12 @@ and there are many resources that are constantly changing with the technology.
 | 4 | What domains can I pursue? | |
 | 5 | What tools do I need to use? | |
 
+
+"What is a buffer overflow?",
+                    "How do I prevent SQL injection attacks?",
+                    "What are common techniques for privilege escalation?",
+                    "Can you explain the concept of zero-day vulnerabilities?",
+                    "What is the difference between symmetric and asymmetric encryption?",  
 ---
 
 ## Anticipated Challenges
@@ -122,7 +128,9 @@ and there are many resources that are constantly changing with the technology.
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
 
-**Milestone 3 — Ingestion and chunking:**
+
+
+**Milestone 3 — Ingestion and chunking:  PDF documents of cybersecurity books **
 
 **Milestone 4 — Embedding and retrieval:**
 

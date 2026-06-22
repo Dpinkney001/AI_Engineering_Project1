@@ -37,7 +37,7 @@ def run_ingestion():
     else:
         print(
             "\n⚠️  No chunks produced. Make sure chunk_pdf() is implemented in ingest.py.\n"
-            "    RulesBot will start, but won't be able to answer questions yet.\n"
+            "       \n"
         )
 
 
@@ -91,15 +91,11 @@ with gr.Blocks(
                     scale=7,
                 ),
                 examples=[
-                    "How do you set up the board in Catan?",
-                    "What happens if you roll a 7 in Catan?",
-                    "How does the Spymaster give clues in Codenames?",
-                    "What happens when a city gets a 4th disease cube in Pandemic?",
-                    "Can two players claim the same route in Ticket to Ride?",
-                    "How do you get out of Jail in Monopoly?",
-                    "How does attacking work in Risk?",
-                    "What is a Wild Draw Four and when can you play it in Uno?",
-                    "How does making a Suggestion work in Clue?",
+                    "What is a buffer overflow?",
+                    "How do I prevent SQL injection attacks?",
+                    "What are common techniques for privilege escalation?",
+                    "Can you explain the concept of zero-day vulnerabilities?",
+                    "What is the difference between symmetric and asymmetric encryption?",  
                 ],
                 cache_examples=False,
             )
@@ -125,8 +121,7 @@ with gr.Blocks(
                     </ul>
                     <hr style="border:none; border-top:1px solid #ddd6fe; margin:0.75rem 0;">
                     <p style="font-size:0.75rem; color:#7c3aed; margin:0; line-height:1.5;">
-                        Answers are grounded in the loaded rules only. If a rule
-                        isn't in the books, RulesBot will say so.
+                        This bot is trained on the above cybersecurity subjects. Ask it anything related to these subjects and it will do its best to answer based on the information in those documents.
                     </p>
                 </div>
             """)
