@@ -74,18 +74,12 @@ and there are many resources that are constantly changing with the technology.
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | How to get started to learn how to hack?| |
-| 2 | How should I build a home lab? | |
-| 3 |What do I need to learn to get started? | |
-| 4 | What domains can I pursue? | |
-| 5 | What tools do I need to use? | |
+| 1 | "What is a buffer overflow?"| |
+| 2 |"How do I prevent SQL injection attacks?" | |
+| 3 |"What are common techniques for privilege escalation?" | |
+| 4 | "Can you explain the concept of zero-day vulnerabilities?" | |
+| 5 | "What is the difference between symmetric and asymmetric encryption?" | |
 
-
-"What is a buffer overflow?",
-"How do I prevent SQL injection attacks?",
-"What are common techniques for privilege escalation?",
-"Can you explain the concept of zero-day vulnerabilities?",
-"What is the difference between symmetric and asymmetric encryption?",  
 ---
 
 ## Anticipated Challenges
