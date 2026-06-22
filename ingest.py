@@ -6,7 +6,7 @@ import pdfplumber
 def load_pdf():
     pdf = pdfplumber.open("file.pdf")
     text = "\n\n".join(p.extract_text() for p in pdf.pages if p.extract_text())
-return text
+    return text
 
 
 ##########################################################################################################
@@ -33,9 +33,7 @@ def load_documents():
 
 
 def chunk_pdf(text, subject_name):
-    """
-def chunk_document(text, game_name):
-    """
+    """"
     Split a rule document into chunks ready for embedding.
 
     This function is already implemented — read through it and the inline
@@ -61,7 +59,7 @@ def chunk_document(text, game_name):
     min_length = 50
 
     chunks = []
-    prefix = game_name.lower().replace(" ", "_")
+    prefix = subject_name.lower().replace(" ", "_")
     counter = 0
 
     start = 0
@@ -72,7 +70,7 @@ def chunk_document(text, game_name):
         if len(chunk_text) >= min_length:
             chunks.append({
                 "text": chunk_text,
-                "game": game_name,
+                "subject": subject_name,
                 "chunk_id": f"{prefix}_{counter}",
             })
             counter += 1

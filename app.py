@@ -1,5 +1,5 @@
 import gradio as gr
-from ingest import load_documents, chunk_document
+from ingest import load_pdf, chunk_pdf
 from retriever import embed_and_store, retrieve, get_collection
 from generator import generate_response
 
@@ -134,7 +134,7 @@ with gr.Blocks(
 
 if __name__ == "__main__":
     print("\n" + "="*50)
-    print("  RulesBot — starting up")
+    print("  Cybersecurity Subject Bot - Starting.....")
     print("="*50 + "\n")
     run_ingestion()
     demo.launch()
