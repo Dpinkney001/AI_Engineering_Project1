@@ -82,10 +82,10 @@ and there are many resources that are constantly changing with the technology.
 
 
 "What is a buffer overflow?",
-                    "How do I prevent SQL injection attacks?",
-                    "What are common techniques for privilege escalation?",
-                    "Can you explain the concept of zero-day vulnerabilities?",
-                    "What is the difference between symmetric and asymmetric encryption?",  
+"How do I prevent SQL injection attacks?",
+"What are common techniques for privilege escalation?",
+"Can you explain the concept of zero-day vulnerabilities?",
+"What is the difference between symmetric and asymmetric encryption?",  
 ---
 
 ## Anticipated Challenges

@@ -51,7 +51,7 @@ def chunk_pdf(text, subject_name):
 
     Returns a list of dicts, each with:
       - "text"     : the chunk text (str)
-      - "game"     : the game name, e.g. "Catan" (str)
+      - "subject"     : the subject name, e.g. "hacking" (str)
       - "chunk_id" : a unique identifier, e.g. "catan_0", "catan_1" (str)
     """
     chunk_size = 300
