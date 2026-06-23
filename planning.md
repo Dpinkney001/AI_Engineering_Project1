@@ -74,11 +74,18 @@ and there are many resources that are constantly changing with the technology.
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | "What is a buffer overflow?"| |
-| 2 |"How do I prevent SQL injection attacks?" | |
-| 3 |"What are common techniques for privilege escalation?" | |
-| 4 | "Can you explain the concept of zero-day vulnerabilities?" | |
-| 5 | "What is the difference between symmetric and asymmetric encryption?" | |
+| 1 | "What is a buffer overflow?"| A vulnerability that occurs when a program writes more data to a buffer (block of memory) than it was allocated to hold, causing the excess data to overwrite adjacent memory. This can corrupt data, crash the program, or — if the attacker carefully controls the overflow — let them overwrite the return address/instruction pointer to redirect execution to injected malicious code. |
+
+
+| 2 |"How do I prevent SQL injection attacks?" |Use parameterized queries / prepared statements instead of concatenating user input into SQL strings. Additional defenses include input validation/sanitization, using an ORM that escapes input by default, applying least-privilege database accounts, and using allowlists for things like table/column names that can't be parameterized. |
+
+
+| 3 |"What are common techniques for privilege escalation?" |Common techniques include exploiting misconfigured file/service permissions, exploiting SUID/SGID binaries (Linux) or weak service permissions (Windows), kernel exploits, credential theft (e.g., dumping memory or config files for stored passwords), exploiting unpatched software vulnerabilities, and abusing scheduled tasks or cron jobs running with elevated privileges. |
+
+| 4 | "Can you explain the concept of zero-day vulnerabilities?" |A zero-day vulnerability is a security flaw that is unknown to the vendor/software maintainer (and thus has no available patch) at the time it is discovered or exploited. "Zero-day" refers to the fact that defenders have had zero days to address it before it's actively exploited in the wild, making these especially dangerous since traditional signature-based defenses often can't catch them. |
+
+
+| 5 | "What is the difference between symmetric and asymmetric encryption?" | Symmetric encryption uses a single shared key for both encryption and decryption (fast, efficient, but requires securely distributing the key beforehand — e.g., AES). Asymmetric encryption uses a key pair: a public key for encryption and a private key for decryption (solves the key-distribution problem but is computationally slower — e.g., RSA). In practice, many systems use asymmetric encryption to securely exchange a symmetric key, then use symmetric encryption for the bulk data (hybrid approach, as in TLS).|
 
 ---
 
