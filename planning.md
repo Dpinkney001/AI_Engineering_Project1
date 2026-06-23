@@ -88,7 +88,7 @@ and there are many resources that are constantly changing with the technology.
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.Data Source unreachable     
+1. Data Source unreachable     
 
 2. Loss of semantic context
 
@@ -106,6 +106,13 @@ and there are many resources that are constantly changing with the technology.
 
      | Injestion | -> | Chunking | -> | Embedding + Vector store | -> | Retrival | -> | Generation |
 
+     [PDF Books] --> [Ingestion: PyMuPDF/pdfplumber]
+             --> [Chunking: LangChain RecursiveCharacterTextSplitter, 450/150]
+             --> [Embedding: sentence-transformers all-MiniLM-L6-v2]
+             --> [Vector Store: Chroma / FAISS]
+             --> [Retrieval: top-k similarity search, k=4-5]
+             --> [Generation: Claude API / GPT API with retrieved context]
+
      
 
 ---
@@ -121,6 +128,30 @@ and there are many resources that are constantly changing with the technology.
      "I'll use AI to help me code" is not a plan.
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
+
+
+
+     AI Tool Plan
+Milestone 3 — Ingestion and chunking:
+
+Tool: Claude
+Input: Documents table + Chunking Strategy section
+Expected output: A chunk_documents.py script that extracts text from the 10 PDFs and splits it into 450-char chunks with 150-char overlap, preserving source filename + page number metadata per chunk
+Verification: Manually inspect 5-10 random chunks to confirm no mid-sentence definition splits, and confirm metadata correctly maps chunks back to their source book
+
+Milestone 4 — Embedding and retrieval:
+
+Tool: Claude
+Input: Retrieval Approach section + chunked output from Milestone 3
+Expected output: A script that embeds all chunks with all-MiniLM-L6-v2, stores them in the chosen vector store, and implements a retrieve(query, k=5) function
+Verification: Run 2-3 sample queries and manually check retrieved chunks are topically relevant before wiring up generation
+
+Milestone 5 — Generation and interface:
+
+Tool: Claude
+Input: Evaluation Plan questions + retrieval function from Milestone 4
+Expected output: A generation function that takes retrieved chunks + user query, builds a prompt, and calls the LLM API for an answer; basic CLI or simple UI to ask questions
+Verification: Run all 5 evaluation questions, compare answers against expected answers, and check whether responses cite/reflect the correct source book
 
 
 
